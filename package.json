@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "concurrently \"cd backend && npm run start:dev\" \"cd frontend && npm run dev\"",
+    "prepare": "husky",
+    "lint": "eslint . --max-warnings 0 --report-unused-disable-directives --ignore-pattern 'backend/dist/'"
   },
   "repository": {
     "type": "git",
@@ -17,5 +19,18 @@
   "bugs": {
     "url": "https://github.com/Extractoro/country-info-app/issues"
   },
-  "homepage": "https://github.com/Extractoro/country-info-app#readme"
+  "homepage": "https://github.com/Extractoro/country-info-app#readme",
+  "dependencies": {
+    "husky": "^9.1.7",
+    "eslint": "^9.19.0",
+    "concurrently": "^9.1.2"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.6.1",
+    "@commitlint/config-conventional": "^19.6.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.18",
+    "husky": "^9.1.7",
+    "typescript-eslint": "^8.22.0"
+  }
 }
