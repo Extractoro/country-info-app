@@ -39,6 +39,7 @@ npm install
 ```
 
 ## 2. Running the Application
+
 ### 2.1 Run Both Backend and Frontend Simultaneously
 
 You can run both the backend and frontend simultaneously using the following command from the root directory:
