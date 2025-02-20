@@ -1,11 +1,11 @@
 export class PopulationDataDto {
-    year: number;
-    value: number;
+  year: number;
+  value: number;
 }
 
 export class PopulationInfoDto {
-    country: string;
-    countryCode: string;
-    iso3: string;
-    populationCounts: PopulationDataDto[];
+  country: string;
+  countryCode: string;
+  iso3: string;
+  populationCounts: PopulationDataDto[];
 }

@@ -1,3 +1,3 @@
 export class BorderCountryDto {
-    borders: { countryCode: string; commonName: string, region: string }[];
+  borders: { countryCode: string; commonName: string; region: string }[];
 }
