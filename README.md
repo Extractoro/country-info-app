@@ -1,1 +1,1 @@
-# finance-tracker
+# country-info-app
